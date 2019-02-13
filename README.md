@@ -46,4 +46,4 @@ kexts和configlist都按照valina的方法来的，usb接口方面，用3.0安�
 
 ## 这是最后的样子，改了名字 just for fun.
 
-![Screen Shot 2019-02-13 at 17.09.24](/Users/leejianglee/Desktop/Screen Shot 2019-02-13 at 17.09.24.png)
+![Screen Shot 2019-02-13 at 17.09.24](https://github.com/ljllili23/Hackintosh/blob/master/Screen%20Shot%202019-02-13%20at%2017.09.24.png)
