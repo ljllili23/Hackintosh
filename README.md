@@ -15,7 +15,7 @@
 
   
 
-
+## 重要的注意事项，即使在bios中没有enable intel optane 内存，也一定要拆下Optane内存，不然会无法启动hackintosh。
 
 ## 2019-02-13 updata:
 
