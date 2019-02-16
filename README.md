@@ -10,7 +10,7 @@
 | :---------- | --------------------------- |
 | **Mobo**    | **AsRock z370M Pro4**       |
 | **Mem**     | **24GB ADATA DDR4 2666MHz** |
-| **Storage** | **Normal SATA SSD**         |
+| **Storage** | **Normal SATA SSD & 2t HDD**         |
 | **GPU**     | **NVIDIA Geforce GTX 970**  |
 
   
