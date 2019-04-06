@@ -31,7 +31,7 @@
 
 安装10.13.6的重要原因是在之前使用intel iGPU安装中出现vram错误，尝试了能找到的各种方法，仍没有解决。故使用nvidia 独显。10.14不支持nvidia 显卡，故放弃Mojave。
 
-## 2019-04-06 updata:
+## 2019-04-06 update:
 根据reddit上的网友回答：interl iGPU vram 错误的原因是使用了非dp接口。
 
 
