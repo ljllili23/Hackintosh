@@ -12,11 +12,14 @@ the following is my PM981
 ```
 
 then check the Disk/partition UUID
+
 `diskutil info #youridentifier#`
 
 `sudo vifs`
 it will open a vim editor,
+
 write this line at the bottom of the opened text file:
+
 `UUID=#the id you get from last step# none ntfs noauto `
 
 save and exit 
