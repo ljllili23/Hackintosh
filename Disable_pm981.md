@@ -28,4 +28,5 @@ and you are good to go!
 
 reference:
 https://www.tonymacx86.com/threads/how-to-disable-specific-nvme-m-2-slot-via-dsdt-hide-unsupported-970-evo-plus.275416/
+
 thanks a lot!
