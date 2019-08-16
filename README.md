@@ -54,3 +54,6 @@ kexts和configlist都按照valina的方法来的，usb接口方面，用3.0安�
 ## 2019-04-06 update:
 根据reddit上的网友回答：interl iGPU vram 错误的原因是使用了非dp接口。
 
+## 2019-08-17 update:
+有一段时间没有用hackintosh了，因为总是随机出现kernel panic. 很苦恼。最近发现罪魁祸首是samsung pm981 nvme的问题。
+解决方案如下：[Disable_pm981.md](https://github.com/ljllili23/Hackintosh/blob/master/Disable_pm981.md)
