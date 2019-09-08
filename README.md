@@ -14,7 +14,8 @@
 | **Storage** | **Normal SATA SSD & 2t HDD**|
 | **GPU**     | **NVIDIA Geforce GTX 970**  |
 
-  
+MortherBoard interfaces layout:
+[z370m pro4](https://www.asrock.com/mb/photo/Z370M%20Pro4(L5).png)
 
 ## 重要的注意事项！！
 ### 即使在bios中没有enable intel optane 内存，也一定要拆下Optane内存，不然会无法启动hackintosh。
