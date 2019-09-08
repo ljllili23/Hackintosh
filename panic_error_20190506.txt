@@ -1,0 +1,191 @@
+Anonymous UUID:       EDC4C1C3-0D26-BD05-D84E-4F42B4A9FE2C
+
+Mon May  6 15:13:09 2019
+
+*** Panic Report ***
+panic(cpu 0 caller 0xffffff7f952c6ba3): nvme: " NVMe: Command timed-out and request found in the completion queue \n"@/BuildRoot/Library/Caches/com.apple.xbs/Sources/IONVMeFamily/IONVMeFamily-356.70.5/IONVMeController.cpp:5184
+Backtrace (CPU 0), Frame : Return Address
+0xffffff9aeedfbb60 : 0xffffff801266c1c6 mach_kernel : _handle_debugger_trap + 0x4c6
+0xffffff9aeedfbbb0 : 0xffffff8012795274 mach_kernel : _kdp_i386_trap + 0x114
+0xffffff9aeedfbbf0 : 0xffffff8012787544 mach_kernel : _kernel_trap + 0x4e4
+0xffffff9aeedfbc60 : 0xffffff801261e1e0 mach_kernel : _return_from_trap + 0xe0
+0xffffff9aeedfbc80 : 0xffffff801266bc3c mach_kernel : _panic_trap_to_debugger + 0x21c
+0xffffff9aeedfbdb0 : 0xffffff801266b9fc mach_kernel : _panic + 0x5c
+0xffffff9aeedfbe10 : 0xffffff7f952c6ba3 com.apple.iokit.IONVMeFamily : __ZN16IONVMeController14CommandTimeoutEP18IOTimerEventSource + 0xb3
+0xffffff9aeedfbe30 : 0xffffff8012c9eebc mach_kernel : __ZN18IOTimerEventSource15timeoutSignaledEPvS0_ + 0x7c
+0xffffff9aeedfbea0 : 0xffffff8012c9ede6 mach_kernel : __ZN18IOTimerEventSource17timeoutAndReleaseEPvS0_ + 0x96
+0xffffff9aeedfbed0 : 0xffffff80126a5844 mach_kernel : _thread_call_delayed_timer + 0xeb4
+0xffffff9aeedfbf40 : 0xffffff80126a53a5 mach_kernel : _thread_call_delayed_timer + 0xa15
+0xffffff9aeedfbfa0 : 0xffffff801261d557 mach_kernel : _call_continuation + 0x17
+      Kernel Extensions in backtrace:
+         com.apple.iokit.IONVMeFamily(2.1)[040156DF-597C-3DF1-B702-BD9AC66A176F]@0xffffff7f952b2000->0xffffff7f952f1fff
+            dependency: com.apple.driver.AppleMobileFileIntegrity(1.0.5)[4FAE8181-B0B4-3A30-B0F3-77F48D2486E5]@0xffffff7f93a0e000
+            dependency: com.apple.iokit.IOPCIFamily(2.9)[AEA4C7F5-CCB0-338B-B471-CF28A9792522]@0xffffff7f92e94000
+            dependency: com.apple.driver.AppleEFINVRAM(2.1)[F35A52E2-CF80-3BA9-92B5-25EFE216094F]@0xffffff7f93f85000
+            dependency: com.apple.iokit.IOStorageFamily(2.1)[F27A8A2A-6662-3608-83BD-415037509E01]@0xffffff7f93cd3000
+            dependency: com.apple.iokit.IOReportFamily(31)[D2F2FBDF-4EE4-38BA-99F5-B699F886F413]@0xffffff7f9438e000
+
+BSD process name corresponding to current thread: kernel_task
+Boot args: keepsyms=1 dart=0 debug=0x100 shikigva=40 -v 
+
+Mac OS version:
+17G65
+
+Kernel version:
+Darwin Kernel Version 17.7.0: Thu Jun 21 22:53:14 PDT 2018; root:xnu-4570.71.2~1/RELEASE_X86_64
+Kernel UUID: 1AE5ACFD-3B6F-3D74-AD52-31F1430DBC6F
+Kernel slide:     0x0000000012400000
+Kernel text base: 0xffffff8012600000
+__HIB  text base: 0xffffff8012500000
+System model name: iMac18,3 (Mac-BE088AF8C5EB4FA2)
+
+System uptime in nanoseconds: 40912301488
+last loaded kext at 8327378416: org.virtualbox.kext.VBoxNetAdp	5.2.14 (addr 0xffffff7f9594e000, size 28672)
+loaded kexts:
+org.virtualbox.kext.VBoxNetAdp	5.2.14
+org.virtualbox.kext.VBoxNetFlt	5.2.14
+org.virtualbox.kext.VBoxUSB	5.2.14
+org.virtualbox.kext.VBoxDrv	5.2.14
+com.github.osxfuse.filesystems.osxfuse	3.8.3
+com.nvidia.web.GeForceWeb	10.3.3
+com.nvidia.web.NVDAGM100HalWeb	10.3.3
+com.nvidia.web.NVDAResmanWeb	10.3.3
+com.nvidia.NVDAStartupWeb	10.3.3
+com.insanelymac.IntelMausiEthernet	2.5.0d0
+as.vit9696.VirtualSMC	1.0.2
+as.vit9696.AppleALC	1.3.6
+as.vit9696.WhateverGreen	1.2.7
+as.vit9696.Lilu	1.3.4
+com.rehabman.driver.USBInjectAll	0.7.1
+com.apple.driver.AudioAUUC	1.70
+com.apple.filesystems.autofs	3.0
+com.apple.driver.AppleHDAHardwareConfigDriver	281.52
+com.apple.driver.AppleHDA	281.52
+com.apple.driver.AGPM	110.23.37
+com.apple.driver.ApplePlatformEnabler	2.7.0d0
+com.apple.driver.X86PlatformShim	1.0.0
+com.apple.driver.AppleUpstreamUserClient	3.6.5
+com.apple.driver.AppleMCCSControl	1.5.5
+com.apple.driver.AppleGraphicsDevicePolicy	3.20.13
+com.apple.AGDCPluginDisplayMetrics	3.20.13
+com.apple.driver.AppleHV	1
+com.apple.iokit.IOUserEthernet	1.0.1
+com.apple.iokit.IOBluetoothSerialManager	6.0.7f10
+com.apple.driver.pmtelemetry	1
+com.apple.Dont_Steal_Mac_OS_X	7.0.0
+com.apple.nvidia.NVDAStartup	10.3.2
+com.apple.driver.AppleOSXWatchdog	1
+com.apple.driver.AppleIntelPCHPMC	2.0.1
+com.apple.driver.ACPI_SMC_PlatformPlugin	1.0.0
+com.apple.driver.AppleIntelSlowAdaptiveClocking	4.0.0
+com.apple.driver.AppleFIVRDriver	4.1.0
+com.apple.driver.AppleFileSystemDriver	3.0.1
+com.apple.filesystems.hfs.kext	407.50.6
+com.apple.AppleFSCompression.AppleFSCompressionTypeDataless	1.0.0d1
+com.apple.BootCache	40
+com.apple.AppleFSCompression.AppleFSCompressionTypeZlib	1.0.0
+com.apple.AppleSystemPolicy	1.0
+com.apple.filesystems.apfs	748.51.0
+com.apple.driver.AppleAHCIPort	329.50.2
+com.apple.driver.AppleACPIButtons	6.1
+com.apple.driver.AppleRTC	2.0
+com.apple.driver.AppleHPET	1.8
+com.apple.driver.AppleSMBIOS	2.1
+com.apple.driver.AppleAPIC	1.7
+com.apple.nke.applicationfirewall	183
+com.apple.security.TMSafetyNet	8
+com.apple.security.quarantine	3
+com.apple.driver.AppleUSBAudio	312.6
+com.apple.iokit.IOUSBUserClient	900.4.1
+com.apple.driver.AppleUSBHostMergeProperties	1.2
+com.apple.kext.triggers	1.0
+com.apple.driver.DspFuncLib	281.52
+com.apple.kext.OSvKernDSPLib	526
+com.apple.driver.AppleSMBusController	1.0.18d1
+com.apple.iokit.IOSMBusFamily	1.1
+com.apple.iokit.IOAcceleratorFamily2	378.26
+com.apple.driver.AppleGraphicsControl	3.20.13
+com.apple.driver.AppleHDAController	281.52
+com.apple.iokit.IOHDAFamily	281.52
+com.apple.iokit.IOAudioFamily	206.5
+com.apple.vecLib.kext	1.2.0
+com.apple.iokit.IONDRVSupport	519.20
+com.apple.iokit.IOAVBFamily	680.2
+com.apple.plugin.IOgPTPPlugin	680.15
+com.apple.iokit.IOEthernetAVBController	1.1.0
+com.apple.driver.AppleSSE	1.0
+com.apple.iokit.IOSurface	211.15
+com.apple.iokit.IOSerialFamily	11
+com.apple.iokit.IOBluetoothFamily	6.0.7f10
+com.apple.AppleGPUWrangler	3.20.13
+com.apple.AppleGraphicsDeviceControl	3.20.13
+com.apple.iokit.IOGraphicsFamily	519.20
+com.apple.driver.AppleSMBusPCI	1.0.14d1
+com.apple.driver.IOPlatformPluginLegacy	1.0.0
+com.apple.driver.X86PlatformPlugin	1.0.0
+com.apple.driver.IOPlatformPluginFamily	6.0.0d8
+com.apple.iokit.IOSlowAdaptiveClockingFamily	1.0.0
+com.apple.driver.usb.IOUSBHostHIDDevice	1.2
+com.apple.driver.usb.cdc	5.0.0
+com.apple.driver.usb.networking	5.0.0
+com.apple.driver.usb.AppleUSBHostCompositeDevice	1.2
+com.apple.filesystems.hfs.encodings.kext	1
+com.apple.driver.usb.AppleUSBHostPacketFilter	1.0
+com.apple.iokit.IOUSBFamily	900.4.1
+com.apple.driver.AppleXsanScheme	3
+com.apple.iokit.IONVMeFamily	2.1.0
+com.apple.iokit.IOAHCIBlockStorage	301.40.2
+com.apple.iokit.IOAHCIFamily	288
+com.apple.driver.usb.AppleUSBXHCIPCI	1.2
+com.apple.driver.usb.AppleUSBXHCI	1.2
+com.apple.driver.AppleEFINVRAM	2.1
+com.apple.driver.AppleEFIRuntime	2.1
+com.apple.iokit.IOHIDFamily	2.0.0
+com.apple.security.sandbox	300.0
+com.apple.kext.AppleMatch	1.0.0d1
+com.apple.driver.DiskImages	480.60.1
+com.apple.driver.AppleFDEKeyStore	28.30
+com.apple.driver.AppleEffaceableStorage	1.0
+com.apple.driver.AppleKeyStore	2
+com.apple.driver.AppleUSBTDM	439.70.3
+com.apple.driver.AppleMobileFileIntegrity	1.0.5
+com.apple.iokit.IOUSBMassStorageDriver	140.70.2
+com.apple.iokit.IOSCSIBlockCommandsDevice	404.30.2
+com.apple.iokit.IOSCSIArchitectureModelFamily	404.30.2
+com.apple.iokit.IOStorageFamily	2.1
+com.apple.driver.AppleCredentialManager	1.0
+com.apple.driver.KernelRelayHost	1
+com.apple.iokit.IOUSBHostFamily	1.2
+com.apple.driver.usb.AppleUSBCommon	1.0
+com.apple.driver.AppleBusPowerController	1.0
+com.apple.driver.AppleSEPManager	1.0.1
+com.apple.driver.IOSlaveProcessor	1
+com.apple.iokit.IOReportFamily	31
+com.apple.iokit.IOTimeSyncFamily	680.15
+com.apple.iokit.IONetworkingFamily	3.4
+com.apple.driver.AppleACPIPlatform	6.1
+com.apple.driver.AppleSMC	3.1.9
+com.apple.iokit.IOPCIFamily	2.9
+com.apple.iokit.IOACPIFamily	1.4
+com.apple.kec.pthread	1
+com.apple.kec.Libm	1
+com.apple.kec.corecrypto	1.0
+
+EOF
+Model: iMac18,3, BootROM 166.0.0.0.0, 6 processors, 3 GHz, 24 GB, SMC 2.41f1
+Graphics: NVIDIA GeForce GTX 970, NVIDIA GeForce GTX 970, PCIe
+Memory Module: BANK 0/DIMM0, 4 GB, DDR4, 2667 MHz, SK Hynix, HMA851U6CJR6N-VK
+Memory Module: BANK 1/DIMM0, 4 GB, DDR4, 2667 MHz, SK Hynix, HMA851U6CJR6N-VK
+Memory Module: BANK 0/DIMM1, 8 GB, DDR4, 2667 MHz, A-DATA Technology, unknown
+Memory Module: BANK 1/DIMM1, 8 GB, DDR4, 2667 MHz, A-DATA Technology, unknown
+Network Service: Ethernet, Ethernet, en0
+PCI Card: NVIDIA GeForce GTX 970, Display Controller, Slot-1
+Serial ATA Device: Galaxy GX0120ML100-L, 120.03 GB
+Serial ATA Device: TOSHIBA DT01ACA100, 1 TB
+Serial ATA Device: WDC WD1002FAEX-00Z3A0, 1 TB
+USB Device: USB 3.0 Bus
+USB Device: USB Audio DAC
+USB Device: Majestouch Convertible 2
+USB Device: XBOX ACC
+USB Device: Razer Mamba
+Thunderbolt Bus: 
