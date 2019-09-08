@@ -11,7 +11,7 @@
 | **CPU**     | **Intel Core i5 8500**      |
 | **Mobo**    | **AsRock z370M Pro4**       |
 | **Mem**     | **24GB ADATA DDR4 2666MHz** |
-| **Storage** | **Intel 760p & SumSang pm981**|
+| **Storage** | **Intel 760p & Samsung pm981**|
 | **GPU**     | **NVIDIA Geforce GTX 970**  |
 
 MortherBoard interfaces layout:
